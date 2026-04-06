@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Yazılım Mimarisi-Arda Ayaydın</title>
+<style>
+body{
+    font-family: Arial;
+    background:#0f172a;
+    color:#fff;
+    padding:20px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+}
+.question{
+    background:#1e293b;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:10px;
+}
+.answer{
+    margin-top:10px;
+    padding:15px;
+    background:#020617;
+    border-left:4px solid #38bdf8;
+    display:none;
+}
+button{
+    margin-top:10px;
+    padding:8px 12px;
+    background:#38bdf8;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+<h1>Yazılım Tasarım ve Mimarisi</h1>
+
+<div class="question">
+<b>1)</b> Yazılım nedir ve bileşenlerini açıklayınız.
+<br>
+<button onclick="toggle(0)">Cevabı Göster</button>
+<div class="answer">
+Yazılım, bir bilgisayar sisteminde donanım dışındaki tüm unsurları kapsayan yapıdır. Sadece programlardan ibaret değildir. Yazılımın bileşenleri şunlardır: Algoritma (mantık süreci), veri (işlenen bilgiler), belge (dokümantasyon), insan (geliştirici ve kullanıcı) ve program (çalıştırılabilir kod).
+</div>
+</div>
+
+<div class="question">
+<b>2)</b> Yazılım ve donanımı karşılaştırınız.
+<br>
+<button onclick="toggle(1)">Cevabı Göster</button>
+<div class="answer">
+Donanım fiziksel olarak üretilir ve zamanla eskir. Yazılım ise geliştirilir ve fiziksel olarak eskimez ancak teknolojik olarak geri kalabilir. Donanımın kopyalanması maliyetliyken yazılım kolay kopyalanabilir.
+</div>
+</div>
+
+<div class="question">
+<b>3)</b> Yazılım mühendisliğini açıklayınız.
+<br>
+<button onclick="toggle(2)">Cevabı Göster</button>
+<div class="answer">
+Yazılım mühendisliği, yazılım geliştirme süreçlerine sistemli, düzenli ve ölçülebilir bir yaklaşım getiren mühendislik disiplinidir. Amaç, kaliteli ve sürdürülebilir yazılım üretmektir.
+</div>
+</div>
+
+<div class="question">
+<b>4)</b> Yazılım hatalarının maliyeti neden artar?
+<br>
+<button onclick="toggle(3)">Cevabı Göster</button>
+<div class="answer">
+Hatalar ne kadar geç fark edilirse düzeltme maliyeti o kadar artar. Analiz aşamasında küçük bir hata, sistem çalıştıktan sonra büyük maliyetlere yol açabilir.
+</div>
+</div>
+
+<div class="question">
+<b>5)</b> Yazılım yaşam döngüsünü açıklayınız.
+<br>
+<button onclick="toggle(4)">Cevabı Göster</button>
+<div class="answer">
+Yazılım yaşam döngüsü, yazılımın planlama, analiz, tasarım, gerçekleştirim ve bakım aşamalarından oluşan süreçtir. Bu süreç döngüseldir ve sürekli gelişir.
+</div>
+</div>
+
+<div class="question">
+<b>6)</b> Yaşam döngüsünün özellikleri nelerdir?
+<br>
+<button onclick="toggle(5)">Cevabı Göster</button>
+<div class="answer">
+Yaşam döngüsü doğrusal değildir, döngüseldir ve gerektiğinde geri dönüş yapılabilir.
+</div>
+</div>
+
+<div class="question">
+<b>7)</b> Yazılım kalite kriterlerini açıklayınız.
+<br>
+<button onclick="toggle(6)">Cevabı Göster</button>
+<div class="answer">
+Güvenirlik, kullanılabilirlik, taşınabilirlik, verimlilik ve bakım kolaylığı yazılımın kalite kriterleridir.
+</div>
+</div>
+
+<div class="question">
+<b>8)</b> Waterfall, Spiral ve Prototipleme modellerini karşılaştırınız.
+<br>
+<button onclick="toggle(7)">Cevabı Göster</button>
+<div class="answer">
+Waterfall doğrusal ilerler ve değişime kapalıdır. Spiral model risk odaklıdır. Prototipleme modeli müşteri geri bildirimi ile gelişir.
+</div>
+</div>
+
+<div class="question">
+<b>9)</b> Artırımsal ve evrimsel geliştirmeyi açıklayınız.
+<br>
+<button onclick="toggle(8)">Cevabı Göster</button>
+<div class="answer">
+Artırımsal modelde yazılım parça parça geliştirilir. Evrimsel modelde ise sistem sürekli geliştirilerek ilerler.
+</div>
+</div>
+
+<div class="question">
+<b>10)</b> Unified Process nedir?
+<br>
+<button onclick="toggle(9)">Cevabı Göster</button>
+<div class="answer">
+Unified Process, yinelemeli ve artımlı bir yazılım geliştirme metodudur. Başlangıç, hazırlık, yapılandırma ve geçiş aşamalarından oluşur.
+</div>
+</div>
+
+</div>
+
+<script>
+function toggle(index){
+    let answers = document.getElementsByClassName("answer");
+    let el = answers[index];
+    el.style.display = (el.style.display === "block") ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
